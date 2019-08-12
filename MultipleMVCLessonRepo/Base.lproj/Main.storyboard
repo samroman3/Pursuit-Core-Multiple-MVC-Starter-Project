@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Movies View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultipleMVCLessonRepo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MoviesViewController" customModule="MultipleMVCLessonRepo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,15 +62,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ggW-Lp-Kf3"/>
+                    <connections>
+                        <outlet property="moviesTableView" destination="Klv-8Q-NO1" id="Ahb-v2-v9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="632" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="Vnq-wD-rkD">
             <objects>
-                <viewController id="AjF-Re-EFJ" sceneMemberID="viewController">
+                <viewController id="AjF-Re-EFJ" customClass="MovieDetailViewController" customModule="MultipleMVCLessonRepo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4D8-wL-1ke">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +110,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGc-b8-Y8T"/>
                     </view>
+                    <connections>
+                        <outlet property="movieDescriptionTextView" destination="tiA-vd-8Jq" id="Y1M-nL-HX0"/>
+                        <outlet property="movieImageView" destination="FTH-6n-mgt" id="V2t-Pr-2AX"/>
+                        <outlet property="movieTitleLabel" destination="ItC-t2-Qmg" id="2Mi-m7-zJv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5d-Eu-2nu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
